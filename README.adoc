@@ -41,8 +41,6 @@ $ npm install stream-line-tokenizer-csv
 ----
 <1> (Optional, default=false) If new lines are allowed in a line, it must be quoted.
 <2> (Optional, default is 'newLine' or 'carriage return + newLine'. This will automatically detected) A custom line separator.
-<3> (Optional, default is '"'). The quote character to use. Only needed if ''allow_new_line_in_cell'' is true.
-<4> (Optional, default=true) if set to true, complete empty lines will be skipped, but the line number will be incremented.
 
 
 .Usage example
