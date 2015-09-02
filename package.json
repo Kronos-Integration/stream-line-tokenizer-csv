@@ -1,0 +1,42 @@
+{
+  "name": "stream-line-tokenizer-csv",
+  "description": "Splits a line by a sparator into tokens.",
+  "main": "lib/line-tokenizer.js",
+  "scripts": {
+    "cover": "node --harmony ./node_modules/istanbul-harmony/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports test",
+    "doc": "jsdoc lib/*.js",
+    "test": "mocha --harmony test/*.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darlenya/stream-line-tokenizer-csv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darlenya/stream-line-tokenizer-csv/issues"
+  },
+  "homepage": "https://github.com/darlenya/stream-line-tokenizer-csv#readme",
+  "engines": {
+    "iojs": "2.0.0"
+  },
+  "keywords": [
+    "stream",
+    "line",
+    "parser"
+  ],
+  "release": {
+    "debug": false
+  },
+  "devDependencies": {
+    "chai": "3.2.0",
+    "istanbul-harmony": "0.3.16",
+    "jsdoc": "^3.3.2",
+    "mocha": "^2.3.0",
+    "semantic-release": "^6.0.1"
+  },
+  "author": {
+    "name": "Torsten Link",
+    "email": "torstelink@gmx.de"
+  },
+  "license": "BSD-2-Clause"
+}
