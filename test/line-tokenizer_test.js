@@ -162,6 +162,77 @@ describe('tokenize lines', function () {
 		}
 	});
 
+	it('First field empty', function (done) {
+
+		let obj = [{
+			"lineNumber": 0,
+			"data": ';Last Name;Email'
+		}];
+
+		collect(obj, verify);
+
+		function verify(err, objects) {
+			assert.notOk(err);
+
+			assert.equal(objects.length, 1);
+
+			assert.deepEqual(objects[0], {
+				"lineNumber": 0,
+				"data": ['', 'Last Name', 'Email']
+			});
+
+			done();
+		}
+	});
+
+	it('All fields empty', function (done) {
+
+		let obj = [{
+			"lineNumber": 0,
+			"data": ';;;'
+		}];
+
+		collect(obj, verify);
+
+		function verify(err, objects) {
+			assert.notOk(err);
+
+			assert.equal(objects.length, 1);
+
+			assert.deepEqual(objects[0], {
+				"lineNumber": 0,
+				"data": ['', '', '']
+			});
+
+			done();
+		}
+	});
+
+	it('Use Custom quotes', function (done) {
+
+		let obj = {
+			"lineNumber": 0,
+			"data": "'  ;Gum''Bo ',  Last''Name  , First Name;other'"
+		};
+
+		collect(obj, verify, {
+			"quote_char": "'"
+		});
+
+		function verify(err, objects) {
+			assert.notOk(err);
+
+			assert.equal(objects.length, 1);
+
+			assert.deepEqual(objects[0], {
+				"lineNumber": 0,
+				"data": ["  ;Gum'Bo ", "Last'Name", "First Name;other'"]
+			});
+
+			done();
+		}
+	});
+
 
 });
 

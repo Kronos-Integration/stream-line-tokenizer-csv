@@ -33,14 +33,19 @@ $ npm install stream-line-tokenizer-csv
 [source,js]
 ----
 {
-  "allow_new_line_in_cell" : true, // <1>
-  "line_separator" : "\n",         // <2>
-  "quote_char" : '"',              // <3>
-  "skip_empty_lines" : true        // <4>
+  "separator_list" : [',', ';'],   // <1>
+  "quote_char" : '"',              // <2>
+  "use_quotes" : true,             // <3>
+  "trim" : true                    // <4>
 }
 ----
-<1> (Optional, default=false) If new lines are allowed in a line, it must be quoted.
-<2> (Optional, default is 'newLine' or 'carriage return + newLine'. This will automatically detected) A custom line separator.
+<1> (Optional, default=[",", ";", "\t"]). A list of possible separators. The first one found in the first line will
+be taken as separator for the whole stream.
+<2> (Optional, default is '"' ). The character used to quote strings
+<3> (Optional, default is true). If set to false, the quote characters will be taken as normal chars.
+<4> (Optional, default is true). If set to true, the field values will be trimmed. Remove leading and trailing
+white space characters. If the field was set in quotes, then the spaces will be kept.
+
 
 
 .Usage example
@@ -48,6 +53,7 @@ $ npm install stream-line-tokenizer-csv
 ----
 const fs = require('fs');
 const lp = require('stream-line-parser');
+const tk = require('stream-line-tokenizer-csv');
 
 let parser = lp({
   "allow_new_line_in_cell" : true,
@@ -56,24 +62,20 @@ let parser = lp({
   "skip_empty_lines" : true
 });
 
-fs.createReadStream('filename.csv').pipe(parser);
+let tokenizer = tk({
+  "separator_list" : [',', ';'],
+  "quote_char" : '"',
+  "use_quotes" : true,
+  "trim" : true
+  });
+
+fs.createReadStream('filename.csv').pipe(parser).pipe(tokenizer);
 
 ----
 
 This will read the file 'filename.csv'. The stream will be piped to the parser which
-will split the stream in to objects. The parser emits an object stream.
-
-.Object Stream example
-[source,js]
-----
-{
-  "lineNumber": 0,  // <1>
-  "data": "a,b,c"   // <2>
-}
-----
-<1> The line number. After each new line the number will be incremented. Even for empty lines.
-<2> The data of the line itself.
-
+will split the stream in to objects. The parser emits an object stream. This object
+stream will then be piped to the line tokenizer.
 
 === License
 BSD-2-Clause
