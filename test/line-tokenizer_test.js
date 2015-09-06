@@ -12,7 +12,7 @@ const mockReadStream = require('./mockReadStream');
 
 const lt = require('../lib/line-tokenizer');
 
-describe('tokenize lines', function () {
+describe('stream-line-tokenizer-csv: tokenize lines', function () {
 
 	it('simple test', function (done) {
 
