@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/darlenya/stream-line-tokenizer-csv.git"
+    "url": "git+https://github.com/Kronos-Integration/stream-line-tokenizer-csv.git"
   },
   "bugs": {
-    "url": "https://github.com/darlenya/stream-line-tokenizer-csv/issues"
+    "url": "https://github.com/Kronos-Integration/stream-line-tokenizer-csv/issues"
   },
-  "homepage": "https://github.com/darlenya/stream-line-tokenizer-csv#readme",
+  "homepage": "https://github.com/Kronos-Integration/stream-line-tokenizer-csv#readme",
   "engines": {
     "iojs": "2.0.0"
   },
