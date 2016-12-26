@@ -1,14 +1,21 @@
 /* jslint node: true, esnext: true */
 'use strict';
 
-const Interceptor = require('kronos-interceptor').Interceptor;
-const parserFactory = require('./line-tokenizer');
+import {
+	Interceptor
+}
+from 'kronos-interceptor';
+
+import {
+	parserFactory
+}
+from './line-tokenizer';
 
 /**
  * This interceptor cares about the handling of the messages.
  * It will add the hops and copies the messages
  */
-class LineTokenizerInterceptor extends Interceptor {
+export default class LineTokenizerInterceptor extends Interceptor {
 
 	static get name() {
 		return 'line-tokenizer-csv';
@@ -23,4 +30,3 @@ class LineTokenizerInterceptor extends Interceptor {
 		return this.connected.receive(request, oldRequest);
 	}
 }
-exports.Interceptor = LineTokenizerInterceptor;
