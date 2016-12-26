@@ -10,7 +10,7 @@ const should = chai.should();
 
 const mockReadStream = require('kronos-test-interceptor').mockReadStreamFactory;
 
-const lt = require('../lib/line-tokenizer');
+const lt = require('../dist/module').parserFactory;
 
 describe('stream-line-tokenizer-csv: tokenize lines', function () {
 

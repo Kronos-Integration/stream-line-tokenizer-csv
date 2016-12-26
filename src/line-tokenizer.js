@@ -151,6 +151,10 @@ class LineTokenizerCsv extends stream.Transform {
 
 }
 
-module.exports = function (opts) {
+function parserFactory(opts) {
 	return new LineTokenizerCsv(opts);
+}
+
+export {
+	parserFactory
 };

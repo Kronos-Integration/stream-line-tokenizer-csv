@@ -11,7 +11,7 @@ const chai = require('chai'),
   assert = chai.assert,
   expect = chai.expect,
   should = chai.should(),
-  InterceptorUnderTest = require('../index').Interceptor,
+  InterceptorUnderTest = require('../dist/module').LineTokenizerInterceptor,
   MockReceiveInterceptor = require('kronos-test-interceptor').MockReceiveInterceptor;
 
 
