@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^3.5.2",
+    "mocha": "^3.5.3",
     "kronos-test-interceptor": "2.1.0",
     "semantic-release": "^8.0.0",
     "jsdoc-to-markdown": "^3.0.0",
@@ -48,7 +48,7 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=8.4.0"
+    "node": ">=8.5.0"
   },
   "keywords": ["kronos-interceptor", "stream", "line", "parser"],
   "nyc": {
