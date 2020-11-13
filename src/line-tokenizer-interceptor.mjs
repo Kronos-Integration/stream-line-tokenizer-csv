@@ -4,7 +4,7 @@
 import {
 	Interceptor
 }
-from 'kronos-interceptor';
+from "@kronos-integration/interceptor";
 
 import {
 	parserFactory
