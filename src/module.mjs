@@ -1,18 +1,8 @@
-/* jslint node: true, esnext: true */
-'use strict';
-
-import LineTokenizerInterceptor from './LineTokenizerInterceptor';
-import {
-  parserFactory
-}
-from './line-tokenizer';
+import LineTokenizerInterceptor from "./line-tokenizer-interceptor.mjs";
+import { parserFactory } from "./line-tokenizer.mjs";
 
 function registerWithManager(manager) {
   return manager.registerInterceptor(LineTokenizerInterceptor);
 }
 
-export {
-  parserFactory,
-  LineTokenizerInterceptor,
-  registerWithManager
-};
+export { parserFactory, LineTokenizerInterceptor, registerWithManager };

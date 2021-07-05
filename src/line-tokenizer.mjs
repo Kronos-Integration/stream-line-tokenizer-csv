@@ -1,5 +1,3 @@
-/* jslint node: true, esnext: true */
-'use strict';
 
 /**
  * This module reads an object stream which contains a string data field.
