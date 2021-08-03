@@ -9,3 +9,21 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/Kronos-Integration/interceptor-line-tokenizer-csv/badge.svg)](https://snyk.io/test/github/Kronos-Integration/interceptor-line-tokenizer-csv)
 [![Coverage Status](https://coveralls.io/repos/Kronos-Integration/interceptor-line-tokenizer-csv/badge.svg)](https://coveralls.io/github/Kronos-Integration/interceptor-line-tokenizer-csv)
 
+# @kronos-integration/interceptor-line-tokenizer-csv
+
+Splits a line by a sparator into tokens
+
+# API
+
+
+# install
+
+With [npm](http://npmjs.org) do:
+
+```shell
+npm install @kronos-integration/interceptor-line-tokenizer-csv
+```
+
+# license
+
+BSD-2-Clause
