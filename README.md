@@ -1,6 +1,6 @@
 [![npm](https://img.shields.io/npm/v/@kronos-integration/interceptor-line-tokenizer-csv.svg)](https://www.npmjs.com/package/@kronos-integration/interceptor-line-tokenizer-csv)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![minified size](https://badgen.net/bundlephobia/min/@kronos-integration/interceptor-line-tokenizer-csv)](https://bundlephobia.com/result?p=@kronos-integration/interceptor-line-tokenizer-csv)
+[![Open Bundle](https://bundlejs.com/badge-light.svg)](https://bundlejs.com/?q=@kronos-integration/interceptor-line-tokenizer-csv)
 [![downloads](http://img.shields.io/npm/dm/@kronos-integration/interceptor-line-tokenizer-csv.svg?style=flat-square)](https://npmjs.org/package/@kronos-integration/interceptor-line-tokenizer-csv)
 [![GitHub Issues](https://img.shields.io/github/issues/Kronos-Integration/interceptor-line-tokenizer-csv.svg?style=flat-square)](https://github.com/Kronos-Integration/interceptor-line-tokenizer-csv/issues)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FKronos-Integration%2Finterceptor-line-tokenizer-csv%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/Kronos-Integration/interceptor-line-tokenizer-csv/goto)
