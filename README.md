@@ -23,7 +23,7 @@ Splits a line by a sparator into tokens
 *   [stream](#stream)
 *   [constructor](#constructor)
     *   [Parameters](#parameters)
-*   [\_transform](#\_transform)
+*   [\_transform](#_transform)
     *   [Parameters](#parameters-1)
 
 ## LineTokenizerInterceptor
@@ -43,15 +43,15 @@ It will split this string into tokens
 Creates the line tokenizer and sets the options.
 The following options are supported:
 {
-"separator_list" : \[',', ';'],
-"quote_char" : '"',
-"use_quotes" : true,
+"separator\_list" : \[',', ';'],
+"quote\_char" : '"',
+"use\_quotes" : true,
 "trim" : true
 }
 
 ### Parameters
 
-*   `opts`  
+*   `opts` &#x20;
 
 ## \_transform
 
@@ -59,9 +59,9 @@ Reads the stream data and split it into lines.
 
 ### Parameters
 
-*   `data`  
-*   `enc`  
-*   `cb`  
+*   `data` &#x20;
+*   `enc` &#x20;
+*   `cb` &#x20;
 
 # install
 
