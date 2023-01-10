@@ -48,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kronos-Integration/interceptor-line-tokenizer-csv.git"
+    "url": "https://github.com/Kronos-Integration/interceptor-line-tokenizer-csv"
   },
   "bugs": {
     "url": "https://github.com/Kronos-Integration/interceptor-line-tokenizer-csv/issues"
